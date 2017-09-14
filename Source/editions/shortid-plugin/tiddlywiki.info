@@ -1,0 +1,34 @@
+{
+  "description": "An empty TiddlyWiki containing \"shortid\", a TiddlyWiki plugin to bundle shortid for use as a macro.",
+  "plugins": [
+    "tiddlywiki/markdown",
+    "shortid"
+  ],
+  "includeWikis": [
+  ],
+  "themes": [
+    "tiddlywiki/vanilla",
+    "tiddlywiki/snowwhite"
+  ],
+  "languages": [
+  ],
+  "build": {
+    "shortid-plugin": [
+      "--rendertiddler", "$:/plugins/reidgould/shortid", "tiddlywiki-shortid-plugin.tid", "text/plain", "$:/core/templates/exporters/TidFile", "exportFilter", "[<currentTiddler>]"
+    ],
+    "empty-with-shortid": [
+      "--rendertiddler","$:/core/save/all","TiddlyWiki_With_shortid.html","text/plain"
+    ],
+    "empty-with-shortid-downloadButton": [
+      "--rendertiddler","shortid/download-empty-with-shortid","TiddlyWiki_With_shortid.html","text/plain"
+    ],
+    "meta": [
+      "--savetiddler","$:/plugins/reidgould/shortid/readme","ReadMe.md",
+      "--savetiddler","$:/plugins/reidgould/shortid/license","license.txt"
+    ]
+  },
+  "config": {
+    "default-tiddler-location": "./newTiddlers",
+    "retain-original-tiddler-path": false
+  }
+}

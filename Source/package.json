@@ -1,0 +1,47 @@
+{
+  "name": "tiddlywiki-shortid-plugin",
+  "version": "0.1.2",
+  "description": "A TiddlyWiki plugin that is a bundle of shortid for use as a macro.",
+  "keywords": [
+    "tiddlywiki",
+    "tiddlywiki5",
+    "shortid"
+  ],
+  "author": {
+    "name": "Reid Gould",
+    "email": "reidgould@gmail.com",
+    "url": "reidgould.com"
+  },
+  "contributors": [
+    {
+      "name": "Reid Gould",
+      "email": "reidgould@gmail.com",
+      "url": "reidgould.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reidgould/tiddlywiki-shortid-plugin"
+  },
+  "license": "SEE LICENSE IN license.txt",
+  "engines": {
+    "node": ">= 6.11.0",
+    "npm": ">= 3.0.0"
+  },
+  "main": "",
+  "scripts": {
+    "wp-shortid": "webpack",
+    "tw-build-shortid": "tiddlywiki ./editions/shortid-plugin --output ../Build/Plugin --build shortid-plugin --output ../Build/EmptyWithShortid --build empty-with-shortid --output . --build meta",
+    "tw-build-shortid-plugin": "tiddlywiki ./editions/shortid-plugin --output ../Build/Plugin --build shortid-plugin",
+    "tw-build-empty-with-shortid": "tiddlywiki ./editions/shortid-plugin --output ../Build/EmptyWithShortid --build empty-with-shortid",
+    "tw-build-meta": "tiddlywiki ./editions/shortid-plugin --output ../ --build meta"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "pkg-dir": "^2.0.0",
+    "shortid": "^2.2.8",
+    "tiddlywiki": "^5.1.14",
+    "webpack": "^3.3.0"
+  },
+  "bundledDependencies": []
+}

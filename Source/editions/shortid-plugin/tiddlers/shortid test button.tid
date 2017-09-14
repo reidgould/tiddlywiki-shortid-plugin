@@ -1,0 +1,10 @@
+created: 20170000000000000
+modified: 20170000000000000
+tags:
+title: shortid test button
+
+<$button actions="""
+<$action-setfield $tiddler="shortid test target" $value=<<shortid "tid/">> />
+""">
+Set text of target tiddler.
+</$button>
